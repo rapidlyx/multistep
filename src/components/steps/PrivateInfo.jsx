@@ -22,7 +22,7 @@ export const PrivateInfo = ({
     setFormErrors(secondError);
     if (secondIsValid) {
       handleClick();
-      saveFormValues(formValues, step);
+      saveFormValues(formValues, step + 1);
     }
   };
 

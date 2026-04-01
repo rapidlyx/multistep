@@ -6,7 +6,7 @@ import { ProfData } from "./ProfData";
 import { animation } from "../constant/animation";
 import { motion } from "framer-motion";
 import { validatorStepThree } from "@/utils/Validators";
-import { saveFormValues } from "@/utils/localeStorage";
+import { deleteFormValues, saveFormValues } from "@/utils/localeStorage";
 
 export const Profile = ({
   setFormValues,
@@ -25,7 +25,7 @@ export const Profile = ({
     setFormErrors(thirdError);
     if (thirdIsValid) {
       handleClick();
-      saveFormValues(formValues, step);
+      deleteFormValues();
     }
   };
 

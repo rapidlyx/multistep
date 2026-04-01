@@ -24,7 +24,7 @@ export const ContactInfo = ({
     setFormErrors(errors);
     if (isValid) {
       handleClick();
-      saveFormValues(formValues, step);
+      saveFormValues(formValues, step + 1);
     }
   };
 

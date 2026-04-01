@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { initialValues } from "@/components/constant/initial";
 import { retrieveFormValues } from "@/utils/localeStorage";
 
-const Main = () => {
+const HomePage = () => {
   const [step, setStep] = useState(0);
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState(initialValues);
@@ -28,6 +28,7 @@ const Main = () => {
 
   useEffect(() => {
     const valueFromLocaleStorage = retrieveFormValues();
+
     if (valueFromLocaleStorage) {
       setFormValues(valueFromLocaleStorage);
 
@@ -55,7 +56,4 @@ const Main = () => {
   );
 };
 
-export default Main;
-export const deleteFormValues = () => {
-  localStorage.deleteItems("formValue");
-};
+export default HomePage;
