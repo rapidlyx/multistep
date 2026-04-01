@@ -46,7 +46,7 @@ export const PrivateInput = ({ handleChange, formErrors, formValues }) => {
           Password <span className="text-red-500">*</span>
         </p>
         <input
-          value={formValues.password}
+          value={formValues.confirmpassword}
           name="password"
           className="rounded-lg border-gray-300 border w-full h-11 pl-3"
           type="password"
@@ -62,10 +62,10 @@ export const PrivateInput = ({ handleChange, formErrors, formValues }) => {
       </div>
       <div className=" flex gap-2 flex-col">
         <p className="text-[14px] font-semibold">
-          Comfirm Password <span className="text-red-500">*</span>
+          Confirm Password <span className="text-red-500">*</span>
         </p>
         <input
-          value={formValues.comfirmPassword}
+          value={formValues.confirmpassword}
           name="comfirmPassword"
           className="rounded-lg border-gray-300 border w-full h-11 pl-3"
           type="password"

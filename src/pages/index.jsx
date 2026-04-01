@@ -56,3 +56,6 @@ const Main = () => {
 };
 
 export default Main;
+export const deleteFormValues = () => {
+  localStorage.deleteItems("formValue");
+};

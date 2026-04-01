@@ -5,7 +5,7 @@ export const initialValues = {
   email: "",
   phoneNumber: "",
   password: "",
-  comfirmPassword: "",
+  confirmPassword: "",
   profileImage: "",
   date: "",
 };

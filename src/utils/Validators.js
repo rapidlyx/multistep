@@ -71,7 +71,7 @@ export const validatorStepThree = (formValues) => {
     const birthDate = new Date(formValues.date);
 
     if (currentDate < birthDate) {
-      thirdError.date = "Bro you cant birth future LOL";
+      thirdError.date = " you cant birth future ";
     } else {
       let ageCheck = currentDate.getFullYear() - birthDate.getFullYear();
 
